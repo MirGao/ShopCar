@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_goods_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/list_menu_selector"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+        android:id="@+id/item_menu_red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:background="@color/title_color_ff0000"
+        android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_catogray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal"
+            android:text="快速结算类"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <View
+        android:id="@+id/item_menu_view_v"
+        android:layout_width="0.1dp"
+        android:layout_height="50dp"
+        android:background="@color/color_menu_lines" />
+    </LinearLayout>
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_catogray"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="矿泉水"-->
+    <!--android:textColor="#888888"-->
+    <!--android:textSize="14sp" />-->
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/tv_count"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@drawable/shape_data"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="100"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="10sp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:singleLine="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/white"&ndash;&gt;-->
+    <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+</LinearLayout>
