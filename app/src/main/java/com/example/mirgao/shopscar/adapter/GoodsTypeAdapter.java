@@ -1,6 +1,7 @@
 package com.example.mirgao.shopscar.adapter;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -8,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.mirgao.shopscar.GoodsAll;
+import com.example.mirgao.shopscar.R;
 
 import java.util.List;
 
@@ -44,8 +46,26 @@ public class GoodsTypeAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return null;
+
+        Viewholder viewholder;
+
+        if (convertView == null){
+            convertView = LayoutInflater.from(context).inflate(R.layout.goods_type_list,null);
+            viewholder = new Viewholder();
+
+            viewholder.tv_type = (TextView) convertView.findViewById(R.id.tv_type);
+            viewholder.viewRed = (View) convertView.findViewById(R.id.v_red);
+            viewholder.viewV = (View) convertView.findViewById(R.id.view_v);
+            viewholder.ll_goods_menu = (LinearLayout) convertView.findViewById(R.id.ll_goods);
+
+            convertView.setTag(viewholder);
+        } else {
+            viewholder = (Viewholder) convertView.getTag();
+        }
         
+
+
+        return null;
     }
 
     class Viewholder {
