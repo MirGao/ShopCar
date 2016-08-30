@@ -62,10 +62,10 @@ public class GoodsTypeAdapter extends BaseAdapter {
         } else {
             viewholder = (Viewholder) convertView.getTag();
         }
-        
 
+       viewholder.tv_type.setText(alls.get(position).getName());//商品名称
 
-        return null;
+        return convertView;
     }
 
     class Viewholder {
