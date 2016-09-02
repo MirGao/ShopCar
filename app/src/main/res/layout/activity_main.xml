@@ -10,6 +10,7 @@
         android:layout_alignParentBottom="true"
         android:background="#54B3EA">
 
+
         <LinearLayout
             android:id="@+id/ll_shopcar"
             android:layout_width="wrap_content"
@@ -24,10 +25,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
-                android:background="@mipmap/icon_shop_car" />
+                android:background="@drawable/icon_shop_car" />
 
             <TextView
-                android:id="@+id/bv_unm"
+                android:id="@+id/tv_bv_unm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -36,7 +37,7 @@
                 android:background="@drawable/goods_tv_bg_selector"
                 android:gravity="center"
                 android:singleLine="true"
-                android:textColor="#ffffff"
+                android:textColor="@color/white"
                 android:textSize="11sp"
                 android:visibility="gone" />
         </LinearLayout>
@@ -54,25 +55,26 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tv_go_pay"
+            android:id="@+id/tv_count"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_alignParentRight="true"
-            android:background="#fc404e"
+            android:background="@color/title_red"
             android:gravity="right|center"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             android:text="去结算"
-            android:textColor="#ffffff"
+            android:textColor="@color/white"
             android:textSize="18sp" />
     </RelativeLayout>
+
 
     <com.flipboard.bottomsheet.BottomSheetLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/bottomSheetLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/rl_bottom"
-        android:background="#ffffff">
+        android:background="@color/white">
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -94,7 +96,7 @@
                     android:scrollbars="none"></ListView>
 
                 <ListView
-                    android:id="@+id/lv_good"
+                    android:id="@+id/lv_goods"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="5"
@@ -109,3 +111,5 @@
 
 
 </RelativeLayout>
+
+
